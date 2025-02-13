@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "target": "ES6",
+      "module": "commonjs",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "moduleResolution": "node",
+      "outDir": "./dist",
+    },
+    "typedocOptions": {
+      "entryPoints": [
+        "src/*.ts",
+        "src/**/*ts",
+        "knexfile.ts"
+      ],
+      "out": "./docs"
+    },
+    "include": [
+      "src/**/*.ts",
+      "knexfile.ts"
+    ],
+    "exclude": ["node_modules"]
+}
